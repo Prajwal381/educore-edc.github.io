@@ -4,51 +4,96 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>EduCore (EDC) – Education Utility Token</title>
-  <meta name="description" content="EduCore (EDC) is a Polygon-based education utility token designed to provide access to learning resources and education-focused digital platforms." />
+  <meta name="description" content="EduCore (EDC) is a Polygon-based education utility token designed to enable access to learning resources and education-focused digital platforms." />
+
   <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background: #f9fafb;
-      color: #1f2937;
+    :root {
+      --primary: #2563eb;
+      --dark: #0f172a;
+      --light: #f8fafc;
+      --text: #1f2937;
+      --card: #ffffff;
     }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      background: var(--light);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
     header {
-      background: #0f172a;
+      background: linear-gradient(135deg, #0f172a, #1e3a8a);
       color: #ffffff;
-      padding: 40px 20px;
+      padding: 70px 20px;
       text-align: center;
     }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
     section {
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
-      padding: 40px 20px;
+      padding: 60px 20px;
     }
+
     h2 {
-      border-bottom: 2px solid #e5e7eb;
-      padding-bottom: 8px;
-      margin-bottom: 20px;
-      color: #0f172a;
+      font-size: 1.8rem;
+      margin-bottom: 25px;
+      color: var(--dark);
+      position: relative;
     }
+
+    h2::after {
+      content: "";
+      width: 60px;
+      height: 4px;
+      background: var(--primary);
+      display: block;
+      margin-top: 8px;
+      border-radius: 2px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    }
+
     a {
-      color: #2563eb;
+      color: var(--primary);
       text-decoration: none;
+      font-weight: 500;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
     footer {
       background: #e5e7eb;
       text-align: center;
-      padding: 20px;
+      padding: 25px 15px;
       font-size: 14px;
+      color: #374151;
     }
-    .card {
-      background: #ffffff;
-      padding: 20px;
-      border-radius: 6px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+
+    .spacer {
+      height: 20px;
     }
   </style>
 </head>
@@ -65,8 +110,8 @@
     <p>
       EduCore (EDC) is a Polygon-based utility token designed to support
       education-focused initiatives and digital learning ecosystems.
-      The project explores the use of blockchain technology to provide
-      transparent access to learning resources and educational tools.
+      The project explores how blockchain technology can be used to
+      provide transparent and efficient access to learning resources.
     </p>
   </div>
 </section>
@@ -76,9 +121,11 @@
   <div class="card">
     <p>
       EDC functions as a digital access token within the EduCore ecosystem.
-      Users may obtain EDC directly from the project or through participation-based
-      mechanisms and use it to unlock educational content, tools, and learning services.
+      Users may obtain EDC directly from the project or through
+      participation-based mechanisms and use it to unlock educational
+      content, tools, and learning services.
     </p>
+    <div class="spacer"></div>
     <p>
       Future updates may expand EduCore into certification systems,
       reward mechanisms, and education-focused infrastructure platforms.
@@ -89,12 +136,10 @@
 <section>
   <h2>Whitepaper</h2>
   <div class="card">
-    <p>
-      EduCore Whitepaper (v1.0)
-    </p>
+    <p><strong>EduCore Whitepaper (v1.0)</strong></p>
     <p>
       <a href="https://raw.githubusercontent.com/Prajwal381/educore-edc.github.io/main/EduCore_Whitepaper_v1.0.pdf" target="_blank">
-        Download Whitepaper (PDF)
+        View / Download Whitepaper (PDF)
       </a>
     </p>
   </div>
